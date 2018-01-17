@@ -18,4 +18,4 @@ scrambleAlg = []
 for i in scrambleLength:
     scrambleAlg.append(random.choice(list))
 
-print scrambleAlg
+print "  ".join(scrambleAlg)
