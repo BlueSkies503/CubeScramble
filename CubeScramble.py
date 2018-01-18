@@ -8,14 +8,15 @@
 import random
 
 # all possible moves on a Rubik's Cube
-list = ['U', 'Ui', 'U2', 'F', 'Fi', 'F2', 'R', 'Ri', 'R2', 'B', 'Bi', 'B2',
-        'L', 'Li', 'L2', 'D', 'Di', 'D2']
+moves = ['U', 'Ui', 'U2', 'F', 'Fi', 'F2', 'R', 'Ri', 'R2', 'B', 'Bi', 'B2',
+         'L', 'Li', 'L2', 'D', 'Di', 'D2']
 
 # shuffle those moves
 scrambleLength = range(25)
 scrambleAlg = []
 
 for i in scrambleLength:
-    scrambleAlg.append(random.choice(list))
+    scrambleAlg.append(random.choice(moves))
 
 print "  ".join(scrambleAlg)
+print len(scrambleAlg)
